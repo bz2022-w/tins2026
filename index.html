@@ -1,0 +1,1248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Call for Papers | TINS Workshop | IEEE GLOBECOM 2026</title>
+  <meta name="description" content="Call for Papers for the Workshop on Trust- and Intelligence-Native Networks and Systems (TINS), IEEE GLOBECOM 2026, Macau S.A.R., China.">
+  <style>
+    :root {
+      --ink: #17202e;
+      --muted: #667085;
+      --panel: #ffffff;
+      --paper: #f5f5f7;
+      --blue: #0071e3;
+      --navy: #111827;
+      --cyan: #5ac8fa;
+      --line: #e2e8f0;
+      --shadow: 0 18px 45px rgba(17, 24, 39, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
+      line-height: 1.55;
+      background:
+        radial-gradient(circle at 18% 8%, rgba(90, 200, 250, 0.12), transparent 28%),
+        radial-gradient(circle at 82% 18%, rgba(0, 113, 227, 0.08), transparent 26%),
+        linear-gradient(180deg, #fbfbfd 0%, var(--paper) 44%, #eff2f6 100%);
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+    }
+
+    .topbar {
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(247, 248, 250, 0.94));
+      border-bottom: 1px solid rgba(17, 24, 39, 0.08);
+      box-shadow: 0 14px 34px rgba(17, 24, 39, 0.06);
+    }
+
+    .topbar-inner {
+      max-width: 1180px;
+      min-height: 76px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: grid;
+      grid-template-columns: minmax(180px, 280px) 1fr minmax(180px, 280px);
+      align-items: center;
+      gap: 18px;
+    }
+
+    .brand-mark,
+    .partner-mark {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .partner-mark {
+      justify-content: flex-end;
+    }
+
+    .brand-mark img,
+    .partner-mark img {
+      display: block;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .brand-mark img {
+      height: 50px;
+      max-width: 270px;
+    }
+
+    .partner-mark img {
+      height: 48px;
+      max-width: 275px;
+    }
+
+    .event-meta {
+      color: var(--navy);
+      font-weight: 700;
+      text-align: center;
+      font-size: 0.98rem;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      color: white;
+      min-height: 312px;
+      background:
+        linear-gradient(90deg, #10243f 0%, #22446d 63%, #17283f 63%, #17283f 100%);
+    }
+
+    @keyframes heroSlide {
+      0%,
+      20% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      27%,
+      93% {
+        opacity: 0;
+        transform: scale(1.035);
+      }
+
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .network-art {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.32;
+      pointer-events: none;
+      transform: translateX(18%) scale(1.08);
+    }
+
+    .hero-inner {
+      position: relative;
+      max-width: none;
+      min-height: 312px;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: minmax(0, 63%) minmax(400px, 37%);
+      align-items: stretch;
+      gap: 0;
+    }
+
+    .hero-copy {
+      position: relative;
+      min-height: 312px;
+      padding: 0 54px 0 clamp(34px, calc((100vw - 1180px) / 2 + 34px), 128px);
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      overflow: hidden;
+    }
+
+    .hero-copy::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 18% 46%, rgba(90, 200, 250, 0.2), transparent 35%),
+        radial-gradient(ellipse at 72% 32%, rgba(145, 176, 226, 0.18), transparent 40%),
+        linear-gradient(118deg, transparent 0 54%, rgba(90, 200, 250, 0.11) 54.15% 54.7%, transparent 54.9% 100%),
+        linear-gradient(118deg, transparent 0 70%, rgba(255, 255, 255, 0.1) 70.1% 70.35%, transparent 70.5% 100%),
+        linear-gradient(112deg, rgba(16, 36, 63, 0.98), rgba(34, 68, 109, 0.96) 60%, rgba(19, 39, 64, 0.95));
+    }
+
+    .hero-copy::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, transparent 0%, transparent 70%, rgba(90, 200, 250, 0.18) 70.2%, transparent 71%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.13), transparent 12%, transparent 88%, rgba(90, 200, 250, 0.1));
+      pointer-events: none;
+    }
+
+    .hero-title {
+      position: relative;
+      z-index: 2;
+      max-width: 760px;
+      padding: 18px 0 16px;
+    }
+
+    .hero-title::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 92px;
+      height: 6px;
+      background: linear-gradient(90deg, var(--cyan), rgba(255, 255, 255, 0.78));
+    }
+
+    .hero-title::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: min(430px, 72%);
+      height: 1px;
+      z-index: -1;
+      background: linear-gradient(90deg, rgba(71, 200, 232, 0.9), rgba(255, 255, 255, 0.26), transparent);
+    }
+
+    .hero h1 {
+      margin: 0;
+      text-align: left;
+      font-size: clamp(2.08rem, 3.05vw, 3.12rem);
+      line-height: 1.04;
+      letter-spacing: 0;
+      text-shadow: 0 4px 18px rgba(0, 0, 0, 0.28);
+    }
+
+    .hero h1 .title-line {
+      display: block;
+      white-space: nowrap;
+    }
+
+    .hero h1 .accent {
+      color: var(--cyan);
+    }
+
+    .hero-kicker {
+      margin: 0 0 18px;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 0.92rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .hero-eyebrow {
+      margin: 0 0 8px;
+      color: white;
+      font-size: clamp(1.14rem, 1.5vw, 1.42rem);
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    .hero-media {
+      position: relative;
+      min-height: 312px;
+      overflow: hidden;
+      background: #09162f;
+    }
+
+    .hero-slide {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      animation: heroSlide 12s infinite;
+      will-change: opacity, transform;
+    }
+
+    .hero-slide:nth-child(1) {
+      animation-delay: 0s;
+    }
+
+    .hero-slide:nth-child(2) {
+      animation-delay: 3s;
+    }
+
+    .hero-slide:nth-child(3) {
+      animation-delay: 6s;
+    }
+
+    .hero-slide:nth-child(4) {
+      animation-delay: 9s;
+    }
+
+    .hero-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      filter: brightness(1.14) saturate(1.12) contrast(1.03);
+    }
+
+    .cfp-strip {
+      background:
+        linear-gradient(90deg, #111827, #1f3b63 48%, var(--blue));
+      color: white;
+      text-align: center;
+      padding: 14px 24px;
+      font-weight: 900;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      font-size: clamp(0.92rem, 2vw, 1.15rem);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18);
+    }
+
+    main {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 44px 24px 48px;
+    }
+
+    .stack {
+      display: grid;
+      gap: 22px;
+    }
+
+    .card {
+      display: grid;
+      grid-template-columns: 220px minmax(0, 1fr);
+      gap: 34px;
+      padding: 38px 34px;
+      background: transparent;
+      border: 0;
+      border-top: 1px solid rgba(17, 24, 39, 0.09);
+      border-radius: 0;
+      box-shadow: none;
+      overflow: visible;
+      position: relative;
+    }
+
+    .main-stack .card:first-child {
+      border-top: 0;
+      padding-top: 38px;
+    }
+
+    .card::before {
+      content: none;
+    }
+
+    .card-header {
+      align-self: start;
+      background: transparent;
+      color: var(--navy);
+      padding: 0 10px 0 0;
+      font-size: 0.88rem;
+      font-weight: 900;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      border-bottom: 0;
+      line-height: 1.35;
+      position: sticky;
+      top: 18px;
+    }
+
+    .card-header::before {
+      content: "";
+      display: block;
+      width: 42px;
+      height: 2px;
+      margin-bottom: 16px;
+      background: linear-gradient(90deg, rgba(90, 200, 250, 0.95), rgba(0, 113, 227, 0.5));
+      border-radius: 999px;
+    }
+
+    .card-body {
+      padding: 0;
+      background: transparent;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+    }
+
+    .main-stack {
+      display: grid;
+      gap: 0;
+      background:
+        linear-gradient(90deg, rgba(247, 249, 252, 0.98) 0 253px, transparent 253px 100%),
+        linear-gradient(90deg, rgba(0, 113, 227, 0.72) 0 3px, transparent 3px 100%) 253px 0 / 3px 100% no-repeat,
+        linear-gradient(90deg, rgba(17, 24, 39, 0.06) 0 1px, transparent 1px 100%) 253px 0 / 1px 100% no-repeat,
+        rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(17, 24, 39, 0.08);
+      border-radius: 8px;
+      box-shadow:
+        0 22px 54px rgba(17, 24, 39, 0.11),
+        0 1px 0 rgba(255, 255, 255, 0.9) inset;
+      overflow: visible;
+      position: relative;
+      isolation: isolate;
+    }
+
+    .main-stack::before {
+      content: "";
+      position: absolute;
+      inset: 12px -12px -14px 14px;
+      z-index: -1;
+      border-radius: 10px;
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.74), rgba(226, 232, 240, 0.72)),
+        linear-gradient(90deg, rgba(0, 113, 227, 0.18), rgba(17, 24, 39, 0.08));
+      border: 1px solid rgba(17, 24, 39, 0.06);
+      box-shadow:
+        0 20px 48px rgba(17, 24, 39, 0.1),
+        0 1px 0 rgba(255, 255, 255, 0.78) inset;
+      pointer-events: none;
+    }
+
+    .main-stack::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--cyan), var(--blue) 32%, rgba(17, 24, 39, 0.74));
+      pointer-events: none;
+    }
+
+    .scope-text {
+      margin: 0;
+      text-align: justify;
+      font-size: 1.04rem;
+      padding: 0;
+      background: transparent;
+      border-left: 0;
+      line-height: 1.62;
+    }
+
+    .topics {
+      columns: 2 280px;
+      column-gap: 36px;
+      padding-left: 19px;
+      margin: 16px 0 0;
+      background: transparent;
+      border-top: 1px solid rgba(17, 24, 39, 0.08);
+      padding-top: 18px;
+    }
+
+    .topics li {
+      break-inside: avoid;
+      margin: 0 0 8px;
+      padding-left: 2px;
+    }
+
+    .topics li::marker {
+      color: var(--blue);
+      font-size: 0.85em;
+    }
+
+    .topics li:last-child {
+      margin-bottom: 0;
+    }
+
+    .person {
+      min-height: 104px;
+      padding: 18px 19px;
+      margin: 0;
+      border: 1px solid rgba(17, 24, 39, 0.075);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(249, 251, 254, 0.86));
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.88),
+        0 14px 34px rgba(17, 24, 39, 0.07);
+      border-radius: 8px;
+    }
+
+    .person-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px 24px;
+      align-content: start;
+    }
+
+    .person-grid-compact {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .tpc-grid {
+      grid-template-columns: repeat(3, minmax(180px, 1fr));
+    }
+
+    .person strong {
+      display: block;
+      color: var(--navy);
+      font-size: 1rem;
+      line-height: 1.28;
+    }
+
+    .person span {
+      display: block;
+      color: var(--muted);
+      font-style: italic;
+      margin-top: 5px;
+    }
+
+    .person a {
+      color: var(--muted);
+      text-decoration: none;
+      overflow-wrap: anywhere;
+      font-size: 0.94rem;
+    }
+
+    .dates {
+      display: grid;
+      gap: 0;
+      margin: 0;
+    }
+
+    .date-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      padding: 11px 0;
+      border-bottom: 1px solid rgba(17, 24, 39, 0.1);
+      align-items: baseline;
+    }
+
+    .date-row:first-child {
+      padding-top: 0;
+    }
+
+    .date-row:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .date-row dt {
+      color: var(--muted);
+      font-weight: 800;
+    }
+
+    .date-row dd {
+      margin: 0;
+      color: var(--navy);
+      font-weight: 900;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .submission p {
+      margin: 0;
+    }
+
+    .submission {
+      align-self: end;
+    }
+
+    .meta-panel {
+      display: grid;
+      grid-template-columns: 220px minmax(0, 1fr);
+      gap: 34px;
+      padding: 38px 34px;
+      border-top: 1px solid rgba(17, 24, 39, 0.09);
+      background: transparent;
+      color: var(--ink);
+      border-radius: 0;
+      box-shadow: none;
+    }
+
+    .meta-panel::before {
+      content: "Important Dates\A & Submission";
+      white-space: pre-line;
+      grid-column: 1;
+      grid-row: 1 / span 2;
+      align-self: start;
+      color: var(--navy);
+      font-size: 0.88rem;
+      font-weight: 900;
+      letter-spacing: 0.13em;
+      line-height: 1.35;
+      text-transform: uppercase;
+    }
+
+    .meta-panel::after {
+      content: "";
+      grid-column: 1;
+      grid-row: 1;
+      width: 58px;
+      height: 2px;
+      margin-top: -18px;
+      background: linear-gradient(90deg, rgba(90, 200, 250, 0.95), rgba(0, 113, 227, 0.5));
+      border-radius: 999px;
+    }
+
+    .meta-block {
+      min-width: 0;
+    }
+
+    .meta-block:first-child {
+      grid-column: 2;
+    }
+
+    .meta-block:last-child {
+      grid-column: 2;
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(17, 24, 39, 0.1);
+    }
+
+    .meta-block:first-child .meta-title {
+      display: none;
+    }
+
+    .meta-title {
+      margin: 0 0 14px;
+      color: var(--navy);
+      font-size: 0.88rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .meta-panel .dates {
+      position: relative;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0;
+      padding-top: 0;
+      border-top: 1px solid rgba(17, 24, 39, 0.1);
+      border-bottom: 1px solid rgba(17, 24, 39, 0.08);
+      background: rgba(255, 255, 255, 0.5);
+    }
+
+    .meta-panel .dates::before {
+      display: none;
+    }
+
+    .meta-panel .date-row {
+      position: relative;
+      display: block;
+      min-height: 86px;
+      padding: 18px 10px;
+      border: 0;
+      border-right: 1px solid rgba(17, 24, 39, 0.09);
+      background: transparent;
+      border-radius: 0;
+    }
+
+    .meta-panel .date-row::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: 10px;
+      width: 30px;
+      height: 2px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, rgba(90, 200, 250, 0.88), rgba(0, 113, 227, 0.48));
+      border: 0;
+      box-shadow: none;
+    }
+
+    .meta-panel .date-row:last-child {
+      border-right: 0;
+    }
+
+    .meta-panel .date-row dt {
+      color: var(--muted);
+      font-size: 0.76rem;
+      letter-spacing: 0.01em;
+    }
+
+    .meta-panel .date-row dd {
+      margin-top: 6px;
+      color: var(--navy);
+      font-size: 0.84rem;
+      line-height: 1.25;
+      text-align: left;
+      white-space: nowrap;
+    }
+
+    .submission-note {
+      margin: 0;
+      color: var(--ink);
+      max-width: 740px;
+      background: rgba(255, 255, 255, 0.56);
+      border: 1px solid rgba(17, 24, 39, 0.075);
+      border-radius: 8px;
+      padding: 15px 16px;
+    }
+
+    .submission-note a {
+      color: var(--blue);
+    }
+
+    .principles {
+      margin-top: 28px;
+      background: linear-gradient(90deg, #17283f, #22446d);
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .principles::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(40deg, transparent 0 20%, rgba(90, 200, 250, 0.18) 20.2%, transparent 20.8%),
+        linear-gradient(150deg, transparent 0 76%, rgba(255, 255, 255, 0.12) 76.2%, transparent 76.7%);
+      opacity: 0.75;
+    }
+
+    .principles-inner {
+      position: relative;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 22px 24px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      align-items: center;
+    }
+
+    .principle {
+      min-width: 0;
+      padding: 0 16px;
+      border-left: 1px solid rgba(255, 255, 255, 0.3);
+      display: grid;
+      grid-template-columns: 38px 1fr;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .principle:first-child {
+      border-left: 0;
+      padding-left: 0;
+    }
+
+    .principle-icon {
+      width: 34px;
+      height: 34px;
+      color: var(--cyan);
+      flex: 0 0 auto;
+    }
+
+    .principle-icon svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .principle-title {
+      margin: 0 0 4px;
+      font-size: clamp(0.94rem, 1.35vw, 1.08rem);
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .principle p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 0.88rem;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 900px) {
+      .topbar-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .brand-mark {
+        justify-content: center;
+      }
+
+      .partner-mark {
+        justify-content: center;
+      }
+
+      .main-stack {
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(250, 252, 255, 0.98));
+        overflow: hidden;
+        transform: none;
+      }
+
+      .main-stack::before {
+        content: none;
+      }
+
+      .card {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        padding: 26px 24px;
+      }
+
+      .main-stack .card:first-child {
+        padding-top: 28px;
+      }
+
+      .card-header {
+        position: static;
+        color: var(--navy);
+      }
+
+      .card-header::before,
+      .meta-panel::after {
+        background: linear-gradient(90deg, rgba(0, 185, 215, 0.88), rgba(28, 90, 160, 0.5));
+      }
+
+      .meta-panel .dates {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .meta-panel .date-row {
+        border-bottom: 1px solid rgba(17, 24, 39, 0.09);
+      }
+
+      .meta-panel .date-row:nth-child(2n) {
+        border-right: 0;
+      }
+
+      .meta-panel .date-row:nth-last-child(-n + 2) {
+        border-bottom: 0;
+      }
+
+      .person-grid,
+      .person-grid-compact {
+        grid-template-columns: 1fr;
+      }
+
+      .tpc-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .hero {
+        min-height: 0;
+      }
+
+      .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding: 0;
+      }
+
+      .hero-copy {
+        min-height: 230px;
+        padding: 0 24px;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .hero-copy::after {
+        display: none;
+      }
+
+      .hero-title {
+        max-width: 680px;
+      }
+
+      .hero h1 {
+        text-align: center;
+      }
+
+      .hero h1 .title-line {
+        white-space: normal;
+      }
+
+      .hero-media {
+        height: 260px;
+        min-height: 260px;
+      }
+
+      .principles-inner {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px 0;
+      }
+
+      .principle:nth-child(odd) {
+        border-left: 0;
+        padding-left: 0;
+      }
+    }
+
+    @media (max-width: 580px) {
+      .topbar-inner,
+      main,
+      .principles-inner {
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+
+      .brand-mark img,
+      .partner-mark img {
+        max-width: 260px;
+      }
+
+      .hero-copy {
+        min-height: 250px;
+        padding: 0 18px;
+      }
+
+      .hero-media {
+        height: 230px;
+      }
+
+      .topics {
+        columns: 1;
+      }
+
+      .card {
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+
+      .date-row {
+        grid-template-columns: 1fr;
+        gap: 2px;
+      }
+
+      .date-row dd {
+        text-align: left;
+      }
+
+      .tpc-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .meta-panel {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 28px 24px;
+      }
+
+      .meta-panel::before,
+      .meta-panel::after {
+        grid-column: 1;
+        grid-row: auto;
+      }
+
+      .meta-panel::before {
+        color: var(--navy);
+      }
+
+      .meta-panel::after {
+        margin-top: 0;
+      }
+
+      .meta-block:first-child,
+      .meta-block:last-child {
+        grid-column: 1;
+      }
+
+      .meta-panel .dates {
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding-top: 0;
+        border-top: 0;
+        border-bottom: 0;
+      }
+
+      .meta-panel .dates::before {
+        display: none;
+      }
+
+      .meta-panel .date-row {
+        min-height: auto;
+        padding: 14px 0 14px 20px;
+        border-right: 0;
+        border-left: 2px solid rgba(0, 113, 227, 0.18);
+        border-bottom: 1px solid rgba(17, 24, 39, 0.1);
+      }
+
+      .meta-panel .date-row:nth-last-child(-n + 2) {
+        border-bottom: 1px solid rgba(17, 24, 39, 0.1);
+      }
+
+      .meta-panel .date-row:last-child {
+        border-bottom: 0;
+      }
+
+      .meta-panel .date-row::before {
+        top: 19px;
+        left: -2px;
+        width: 3px;
+        height: 34px;
+        border-radius: 999px;
+        box-shadow: none;
+      }
+
+      .principles-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .principle,
+      .principle:nth-child(odd),
+      .principle:first-child {
+        border-left: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 16px 0 0;
+      }
+
+      .principle:first-child {
+        border-top: 0;
+        padding-top: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="topbar-inner">
+        <div class="brand-mark">
+          <img src="fig/official-ieee-globecom.png" alt="IEEE GLOBECOM">
+        </div>
+        <div class="event-meta">Macau S.A.R., China &nbsp; | &nbsp; 7-11 December 2026</div>
+        <div class="partner-mark">
+          <img src="fig/official-comsoc-ieee-black.png" alt="IEEE Communications Society and IEEE">
+        </div>
+      </div>
+    </div>
+
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <svg class="network-art" viewBox="0 0 900 260" preserveAspectRatio="none" aria-hidden="true">
+            <circle cx="88" cy="142" r="62" stroke="rgba(0,185,215,0.12)" stroke-width="10" fill="none"></circle>
+            <circle cx="88" cy="142" r="102" stroke="rgba(0,185,215,0.08)" stroke-width="4" fill="none"></circle>
+            <path d="M80 82 L205 45 L340 142 L500 64 L690 154 L552 218 L315 206 L164 178 Z" stroke="rgba(255,255,255,0.18)" stroke-width="2" fill="none"></path>
+            <path d="M205 45 L315 206 M340 142 L552 218 M500 64 L552 218 M340 142 L164 178" stroke="rgba(255,255,255,0.13)" stroke-width="1.5" fill="none"></path>
+            <g fill="rgba(0,185,215,0.66)">
+              <circle cx="80" cy="82" r="5"></circle>
+              <circle cx="205" cy="45" r="7"></circle>
+              <circle cx="500" cy="64" r="6"></circle>
+              <circle cx="690" cy="154" r="4"></circle>
+              <circle cx="315" cy="206" r="6"></circle>
+            </g>
+            <g fill="rgba(255,255,255,0.45)">
+              <circle cx="340" cy="142" r="6"></circle>
+              <circle cx="552" cy="218" r="5"></circle>
+              <circle cx="164" cy="178" r="4"></circle>
+              <circle cx="268" cy="98" r="3"></circle>
+              <circle cx="438" cy="184" r="3"></circle>
+              <circle cx="612" cy="112" r="3"></circle>
+            </g>
+          </svg>
+          <div class="hero-title">
+            <p class="hero-kicker">IEEE GLOBECOM 2026</p>
+            <p class="hero-eyebrow">Workshop on</p>
+            <h1 id="page-title" aria-label="Workshop on Trust- and Intelligence-Native Networks and Systems (TINS)">
+              <span class="title-line accent">Trust- and Intelligence-Native</span>
+              <span class="title-line">Networks and Systems (TINS)</span>
+            </h1>
+          </div>
+        </div>
+        <div class="hero-media" aria-label="Macau landmark image carousel">
+          <div class="hero-slide">
+            <img src="fig/carousel-macau-grand-lisboa.jpg" alt="Grand Lisboa and Macau skyline">
+          </div>
+          <div class="hero-slide">
+            <img src="fig/carousel-macau-city-lights.jpg" alt="Macau city lights skyline">
+          </div>
+          <div class="hero-slide">
+            <img src="fig/carousel-macau-ruins-st-paul-blue-sky.jpg" alt="Ruins of Saint Paul's in Macau under a blue sky">
+          </div>
+          <div class="hero-slide">
+            <img src="fig/carousel-macau-peninsula-lights-tight.jpg" alt="Macau peninsula skyline lit at night">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cfp-strip">Call for Papers</div>
+  </header>
+
+  <main>
+    <div class="main-stack">
+      <section class="card" aria-labelledby="scope-title">
+        <div class="card-header" id="scope-title">Scope and Motivation</div>
+        <div class="card-body">
+          <p class="scope-text">The rapid wireless evolution towards 6G, coupled with its unprecedented convergence with AI and collaborative computing, is enabling a wide range of networked systems and complex applications. However, current communication and computing architectures are designed in isolation and operated under predefined goals, leading to amplified security risks and degraded effectiveness when systems scale up. Addressing these challenges requires intelligent orchestration of communication and computing resources through distributed collaboration, driving a paradigm shift from situation-agnostic, preconfigured systems to dynamic, goal-oriented operation that adapts to evolving user requirements. In this context, trust has emerged as a foundational mechanism for enabling dynamic collaboration and goal fulfillment by holistically assessing collaborators' capabilities and guiding coordinated, goal-oriented task execution in complex systems. Realizing this vision requires the development of trust- and intelligence-native networks and systems, where trust and intelligence are intrinsically embedded within system architecture, operational logic, and dynamic collaboration. The Workshop on Trust- and Intelligence-Native Networks and Systems (TINS) invites cutting-edge research on new concepts, models, and applications related to trust and intelligence in future systems.</p>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="topics-title">
+        <div class="card-header" id="topics-title">Topics of Interest</div>
+        <div class="card-body">
+          <p>Topics of interest include, but are not limited to:</p>
+          <ul class="topics">
+            <li>System modeling, goal-oriented optimization and operation of networks</li>
+            <li>Situation-awareness through collaborative sensing and computing</li>
+            <li>Protocols for trust- and intelligence-native networks and systems</li>
+            <li>Trust- and intelligence-native architectures for future networks</li>
+            <li>Task-specific trust modeling</li>
+            <li>Dynamic and evolving trust modeling in large-scale networks</li>
+            <li>Trust evaluation under uncertainty and incomplete information</li>
+            <li>Trust-aware routing, access control, and resource management</li>
+            <li>Integrated trust, security, and privacy mechanisms</li>
+            <li>Interpretability, explainability, and transparency in trust modeling</li>
+            <li>Trust-aware collaborator selection and coordination</li>
+            <li>Intelligent task decomposition and dynamic collaboration formation</li>
+            <li>Collective intelligence for goal-oriented network operation</li>
+            <li>Task-oriented intelligence orchestration and decision-making</li>
+            <li>Distributed collaboration among resource-constrained devices</li>
+            <li>Explainable and trustworthy AI for future networks</li>
+            <li>Embodied AI / Agentic AI for intelligence-native systems</li>
+            <li>Physical AI for spatial intelligence systems</li>
+            <li>Evaluation metrics for trust- and intelligence-native systems</li>
+            <li>Testbeds and real-world deployments</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="chairs-title">
+        <div class="card-header" id="chairs-title">General Co-Chairs</div>
+        <div class="card-body person-grid person-grid-compact">
+          <div class="person">
+            <strong>Xianbin Wang</strong>
+            <span>Western University, Canada</span>
+            <a href="mailto:xianbin.wang@uwo.ca">xianbin.wang@uwo.ca</a>
+          </div>
+          <div class="person">
+            <strong>Dusit Niyato</strong>
+            <span>Nanyang Technological University, Singapore</span>
+            <a href="mailto:dniyato@ntu.edu.sg">dniyato@ntu.edu.sg</a>
+          </div>
+          <div class="person">
+            <strong>Lei Zhang</strong>
+            <span>University of Glasgow, UK</span>
+            <a href="mailto:lei.zhang@glasgow.ac.uk">lei.zhang@glasgow.ac.uk</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="tpc-title">
+        <div class="card-header" id="tpc-title">TPC Co-Chairs</div>
+        <div class="card-body person-grid tpc-grid">
+          <div class="person">
+            <strong>Naofal Al-Dhahir</strong>
+            <span>University of Texas at Dallas, USA</span>
+            <a href="mailto:aldhahir@utdallas.edu">aldhahir@utdallas.edu</a>
+          </div>
+          <div class="person">
+            <strong>Zehui Xiong</strong>
+            <span>Queen's University Belfast, UK</span>
+            <a href="mailto:z.xiong@qub.ac.uk">z.xiong@qub.ac.uk</a>
+          </div>
+          <div class="person">
+            <strong>Derrick Wing Kwan Ng</strong>
+            <span>University of New South Wales, Australia</span>
+            <a href="mailto:w.k.ng@unsw.edu.au">w.k.ng@unsw.edu.au</a>
+          </div>
+          <div class="person">
+            <strong>Botao Zhu<br>(Main Contact)</strong>
+            <span>Western University, Canada</span>
+            <a href="mailto:bzhu88@uwo.ca">bzhu88@uwo.ca</a>
+          </div>
+          <div class="person">
+            <strong>He Fang</strong>
+            <span>Fujian Normal University, China</span>
+            <a href="mailto:fanghe@fjnu.edu.cn">fanghe@fjnu.edu.cn</a>
+          </div>
+          <div class="person">
+            <strong>Mahendra Shukla</strong>
+            <span>ABV-Indian Institute of Information Technology and Management, India</span>
+            <a href="mailto:mahendra@iiitm.ac.in">mahendra@iiitm.ac.in</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="meta-panel" aria-label="Important dates and submission">
+        <div class="meta-block" aria-labelledby="dates-title">
+          <h2 class="meta-title" id="dates-title">Important Dates</h2>
+            <dl class="dates">
+              <div class="date-row">
+                <dt>Paper Submission</dt>
+                <dd>10 August 2026</dd>
+              </div>
+              <div class="date-row">
+                <dt>Acceptance</dt>
+                <dd>20 September 2026</dd>
+              </div>
+              <div class="date-row">
+                <dt>Camera-Ready</dt>
+                <dd>30 September 2026</dd>
+              </div>
+              <div class="date-row">
+                <dt>Workshop Date</dt>
+                <dd>7 December 2026</dd>
+              </div>
+            </dl>
+        </div>
+        <div class="meta-block" aria-labelledby="submission-title">
+          <h2 class="meta-title" id="submission-title">Submission</h2>
+          <p class="submission-note">All papers for technical workshop should be submitted via EDAS. Full instructions and important deadlines are posted at <a href="https://globecom2026.ieee-globecom.org/">https://globecom2026.ieee-globecom.org/</a>.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="principles" aria-label="Workshop themes">
+    <div class="principles-inner">
+      <section class="principle">
+        <div class="principle-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <path d="m9 11 3 3L22 4"></path>
+          </svg>
+        </div>
+        <div>
+          <h2 class="principle-title">Trust</h2>
+          <p>Build trustworthy collaboration in dynamic environments.</p>
+        </div>
+      </section>
+      <section class="principle">
+        <div class="principle-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M9.5 2A3.5 3.5 0 0 0 6 5.5v.2A3.5 3.5 0 0 0 4 12v1a3.5 3.5 0 0 0 2.2 3.25A3.6 3.6 0 0 0 10 22V2Z"></path>
+            <path d="M14.5 2A3.5 3.5 0 0 1 18 5.5v.2A3.5 3.5 0 0 1 20 12v1a3.5 3.5 0 0 1-2.2 3.25A3.6 3.6 0 0 1 14 22V2Z"></path>
+            <path d="M7.5 8.5h2"></path>
+            <path d="M14.5 8.5h2"></path>
+            <path d="M8 14h2"></path>
+            <path d="M14 14h2"></path>
+          </svg>
+        </div>
+        <div>
+          <h2 class="principle-title">Intelligence</h2>
+          <p>Leverage AI for adaptive and goal-oriented systems.</p>
+        </div>
+      </section>
+      <section class="principle">
+        <div class="principle-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="m7 11 2-2a3 3 0 0 1 4.2 0l.8.8"></path>
+            <path d="m17 13-2 2a3 3 0 0 1-4.2 0L10 14.2"></path>
+            <path d="M3 8h3l3 3"></path>
+            <path d="M21 16h-3l-3-3"></path>
+            <path d="M6 8l-3 3 4 4"></path>
+            <path d="m18 16 3-3-4-4"></path>
+          </svg>
+        </div>
+        <div>
+          <h2 class="principle-title">Collaboration</h2>
+          <p>Enable coordinated action across diverse stakeholders.</p>
+        </div>
+      </section>
+      <section class="principle">
+        <div class="principle-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M2 12h20"></path>
+            <path d="M12 2a15.3 15.3 0 0 1 0 20"></path>
+            <path d="M12 2a15.3 15.3 0 0 0 0 20"></path>
+          </svg>
+        </div>
+        <div>
+          <h2 class="principle-title">Future Networks</h2>
+          <p>Advance 6G and beyond with intelligence and trust.</p>
+        </div>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>
